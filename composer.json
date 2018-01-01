@@ -14,7 +14,10 @@
         "laravel/passport": "^4.0",
         "laravel/scout": "^3.0",
         "laravel/socialite": "^3.0",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "davibennun/laravel-push-notification": "dev-laravel5",
+        "chalcedonyt/laravel-valueobject": "^1.01",
+        "chalcedonyt/laravel-specification": "dev-master"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

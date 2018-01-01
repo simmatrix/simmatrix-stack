@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Horizon;
 
 class AppServiceProvider extends ServiceProvider
 {

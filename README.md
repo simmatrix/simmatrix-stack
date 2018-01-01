@@ -15,10 +15,12 @@ To ease the development of new Laravel project with pre-configured packages that
     - `chmod -R 777 bootstrap/`
 8. Point your webserver's document root to the `public/` directory
 9. Create a symbolic link for your storage directory by running `php artisan storage:link`
-10. Import all table structures into your database by running `php artisan migrate` 
+10. Import all table structures into your database by running `php artisan migrate --seed` 
 11. Create a new ecryption key for Passport by running `php artisan passport:install`
 12. Start developing!
 
+### While Development
+1. If you happened to re-migrate everything, you would need to re-create grant clients for your Passport by running `php artisan passport:client --personal` and `php artisan passport:client --password`, then update the client secret in your `.env` file
 
 ### Steps for Live Deployment
 

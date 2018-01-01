@@ -25,3 +25,4 @@ To ease the development of new Laravel project with pre-configured packages that
 1. Optimize Composer's autoloader `composer install --optimize-autoloader`
 2. Combine all config files into one cached file `php artisan config:cache`
 3. Combine all routes into one cached file `php artisan route:cache`
+4. [First time only] Generate an encryption key for Passport `php artisan passport:keys`

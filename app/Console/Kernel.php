@@ -24,8 +24,10 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')
-        //          ->hourly();
+        // $schedule->command('inspire') ->hourly();
+
+        // To populate Horizon's dashboard to show information about your jobs and queue wait times and throughput
+        $schedule -> command('horizon:snapshot') -> everyFiveMinutes();
     }
 
     /**

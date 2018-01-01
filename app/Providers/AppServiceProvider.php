@@ -13,7 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if ( env('HORIZON_ENABLE_EMAIL_NOTIFICATION') ) Horizon::routeMailNotificationsTo('example@example.com');
+        if ( env('HORIZON_ENABLE_SLACK_NOTIFICATION') ) Horizon::routeSlackNotificationsTo('slack-webhook-url', '#channel');
+        if ( env('HORIZON_ENABLE_SMS_NOTIFICATION') ) Horizon::routeSmsNotificationsTo('01123456789');
     }
 
     /**

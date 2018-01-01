@@ -28,3 +28,5 @@ To ease the development of new Laravel project with pre-configured packages that
 2. Combine all config files into one cached file `php artisan config:cache`
 3. Combine all routes into one cached file `php artisan route:cache`
 4. [First time only] Generate an encryption key for Passport `php artisan passport:keys`
+5. [If you're using Algolia Search] To batch import your existing records to your search index, run `php artisan scout:import "App\Models\YourModel"`
+6. You only need one supervisord worker to start your Horizon `php artisan horizon`. Sample supervisor configuration is available in [Laravel Horizon's documentation](https://laravel.com/docs/5.5/horizon) itself.

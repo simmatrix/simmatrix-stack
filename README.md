@@ -2,12 +2,22 @@
 
 To ease the development of new Laravel project with pre-configured packages that are regarded as necessity.
 
+### Configured Packages
+1. Laravel Passport: For API Authentication
+2. Laravel Socialite: Supports authentication with Facebook, Twitter, LinkedIn, Google, GitHub and Bitbucket
+3. Laravel Scout: For fast full-text search
+4. Laravel Horizon: For managing queued jobs
+5. Laravel Dusk: For browser automation testing
+6. Laravel Push Notification: To send push notifications to Android and iOS devices
+7. Laravel DOM PDF: For generation of PDF documents
+8. Laravel Echo: Websocket, broadcasting, Pusher
+
 ### Steps
 
 1. Clone this repository
 2. Create a new database
 3. Run `composer install` and `npm install`
-4. Create a new `.env` file by running `copy .env.example .env` 
+4. Create a new `.env` file by running `copy .env.example .env`
 5. Fill up the configuration details in your `.env` file
 6. Create a new appilcation key by running `php artisan key:generate`
 7. Configure folder permissions
@@ -15,7 +25,7 @@ To ease the development of new Laravel project with pre-configured packages that
     - `chmod -R 777 bootstrap/`
 8. Point your webserver's document root to the `public/` directory
 9. Create a symbolic link for your storage directory by running `php artisan storage:link`
-10. Import all table structures into your database by running `php artisan migrate --seed` 
+10. Import all table structures into your database by running `php artisan migrate --seed`
 11. Create a new ecryption key for Passport by running `php artisan passport:install`
 12. Start developing!
 

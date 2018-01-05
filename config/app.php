@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Davibennun\LaravelPushNotification\LaravelPushNotificationServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
+        Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class,
 
     ],
 

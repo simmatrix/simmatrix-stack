@@ -14,7 +14,7 @@ To ease the development of new Laravel project with pre-configured packages that
 
 ### Steps
 
-1. Clone this repository
+1. Clone this repository `git clone https://github.com/simmatrix/simmatrix-stack.git`
 2. Create a new database
 3. Run `composer install` and `npm install`
 4. Create a new `.env` file by running `copy .env.example .env`

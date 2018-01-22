@@ -18,11 +18,11 @@ To ease the development of new Laravel project with pre-configured packages that
 1. Clone this repository `git clone https://github.com/simmatrix/simmatrix-stack.git`
 2. Create a new database
 3. Create a new `.env` file by running `cp .env.example .env` and fill up the configuration details
-4. Create a new appilcation key by running `php artisan key:generate`
-5. Configure folder permissions
+4. Download dependencies by running `composer install && npm install`
+5. Create a new appilcation key by running `php artisan key:generate`
+6. Configure folder permissions
     - `chmod -R 777 storage/`
     - `chmod -R 777 bootstrap/`
-6. Download dependencies by running `composer install && npm install`
 7. Point your webserver's document root to the `public/` directory
 8. Create a symbolic link for your storage directory by running `php artisan storage:link`
 9. Import all table structures into your database by running `php artisan migrate --seed`

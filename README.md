@@ -23,7 +23,28 @@ To ease the development of new Laravel project with pre-configured packages that
 6. Configure folder permissions
     - `chmod -R 777 storage/`
     - `chmod -R 777 bootstrap/`
-7. Point your webserver's document root to the `public/` directory
+7. Setup your host file.
+    - If you're using Homestead, add new entries into your `Homestead.yaml` file
+    	```
+    	sites:
+        ...
+        ...
+        - map: mypolicy.test
+          to: ~/Labs/my-policy-backend/public
+
+    	databases:
+    	    ...
+    	    ...
+    	    - mypolicy
+        ```
+        Then edit your host file by running `sudo vi /etc/hosts`, then add one new entry your this project.
+        ```
+        192.168.10.10   mypolicy.test
+        ```
+    - If you're not using Homestead, just modify your host file
+        ```
+        127.0.0.1  mypolicy.test
+        ```
 8. Create a symbolic link for your storage directory by running `php artisan storage:link`
 9. Import all table structures into your database by running `php artisan migrate --seed`
 10. Create a new ecryption key for Passport by running `php artisan passport:install`

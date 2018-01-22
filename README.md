@@ -11,26 +11,27 @@ To ease the development of new Laravel project with pre-configured packages that
 6. Laravel Push Notification: To send push notifications to Android and iOS devices
 7. Laravel DOM PDF: For generation of PDF documents
 8. Laravel Echo: Websocket, broadcasting, Pusher
+9. Laravel API Documentation Generator
 
 ### Steps
 
 1. Clone this repository `git clone https://github.com/simmatrix/simmatrix-stack.git`
 2. Create a new database
-3. Run `composer install` and `npm install`
-4. Create a new `.env` file by running `copy .env.example .env`
-5. Fill up the configuration details in your `.env` file
-6. Create a new appilcation key by running `php artisan key:generate`
-7. Configure folder permissions
+3. Create a new `.env` file by running `cp .env.example .env` and fill up the configuration details
+4. Create a new appilcation key by running `php artisan key:generate`
+5. Configure folder permissions
     - `chmod -R 777 storage/`
     - `chmod -R 777 bootstrap/`
-8. Point your webserver's document root to the `public/` directory
-9. Create a symbolic link for your storage directory by running `php artisan storage:link`
-10. Import all table structures into your database by running `php artisan migrate --seed`
-11. Create a new ecryption key for Passport by running `php artisan passport:install`
-12. Start developing!
+6. Download dependencies by running `composer install && npm install`
+7. Point your webserver's document root to the `public/` directory
+8. Create a symbolic link for your storage directory by running `php artisan storage:link`
+9. Import all table structures into your database by running `php artisan migrate --seed`
+10. Create a new ecryption key for Passport by running `php artisan passport:install`
+11. Start developing!
 
 ### While Development
 1. If you happened to re-migrate everything, you would need to re-create grant clients for your Passport by running `php artisan passport:client --personal` and `php artisan passport:client --password`, then update the client secret in your `.env` file
+2. To generate documentation: `php artisan api:generate --routePrefix=api/v1/*`
 
 ### Steps for Live Deployment
 

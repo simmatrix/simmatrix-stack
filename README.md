@@ -39,7 +39,7 @@ To ease the development of new Laravel project with pre-configured packages that
 
 ### While Development
 1. If you happened to re-migrate everything, you would need to re-create grant clients for your Passport by running `php artisan passport:client --personal` and `php artisan passport:client --password`, then update the client secret in your `.env` file
-2. To generate documentation: `php artisan api:generate --routePrefix=api/v1/*`
+2. To generate documentation: `php artisan api:generate --routePrefix=api/v1/*`, you can then access your documentation via "http://your-url.test/docs"
 
 ### Steps for Live Deployment
 

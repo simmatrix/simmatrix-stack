@@ -27,7 +27,7 @@ To ease the development of new Laravel project with pre-configured packages that
 8. Create a symbolic link for your storage directory by running `php artisan storage:link`
 9. Import all table structures into your database by running `php artisan migrate --seed`
 10. Create a new ecryption key for Passport by running `php artisan passport:install`
-11. Remove the current `.git` folder, setup your own repository, then run `git remote add origin <your-own-repository-url>`, then push to your own repository `git push -u origin master`
+11. Remove the current `.git` folder, setup your own repository, then run `git init`, followed by `git remote add origin <your-own-repository-url>`, finally push to your own repository `git push -u origin master`
 12. Start developing!
 
 ### While Development

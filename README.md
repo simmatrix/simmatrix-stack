@@ -26,11 +26,11 @@ To ease the development of new Laravel project with pre-configured packages that
 7. Setup your host file.
     - If you're using Homestead, add new entries into your `Homestead.yaml` file
     	```
-    	sites:
-        ...
-        ...
-        - map: mypolicy.test
-          to: ~/Labs/my-policy-backend/public
+        sites:
+            ...
+            ...
+            - map: mypolicy.test
+              to: ~/Labs/my-policy-backend/public
 
     	databases:
     	    ...
